@@ -363,3 +363,12 @@ psql --username=freecodecamp --dbname=postgres
 psql -U postgres < universe.sql
 \c universe
 psql --username=freecodecamp --dbname=postgres
+pg_dump -cC --inserts -U freecodecamp universe > universe.sql
+git remote set-url origin https://github.com/CaroNew/universe-database
+git branch -M main
+git push -u origin main
+git remote set-url origin https://github.com/CaroNew/universe-database.git
+git push -u origin main
+git push -u origin main
+ls --color=auto
+git add .
